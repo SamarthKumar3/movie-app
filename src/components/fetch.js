@@ -13,7 +13,7 @@ const Fetch = (props) => {
         setLoading(true);
         const fetchMovies = async () => {
             try {
-                const API_KEY = process.env.REACT_APP_API;
+                const API_KEY = process.env.REACT_APP_API_KEY;
                 console.log(API_KEY);
                 const response = await axios.get('https://api.themoviedb.org/3/search/movie?query=' + props.movie + '&api_key=' + API_KEY);
 
